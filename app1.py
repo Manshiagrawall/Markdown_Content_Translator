@@ -10,7 +10,7 @@ import bleach  # Import bleach for sanitizing HTML
 load_dotenv()
 
 # Set OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # Function to extract text from PDF while preserving formatting
 def extract_text_from_pdf(file):
@@ -33,7 +33,7 @@ def translate_content(content, target_language):
     ]
     
     # Use OpenAI's ChatCompletion for translation
-    client = openai.OpenAI(api_key=openai.api_key)  # Set API key here
+    client = openai.OpenAI(api_key=openai_api_key)  # Set API key here
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",  # Use a suitable model; adjust as needed
         messages=messages,
