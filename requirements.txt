@@ -1,0 +1,6 @@
+streamlit
+openai
+PyMuPDF
+markdown2
+python-dotenv
+bleach
