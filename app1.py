@@ -479,7 +479,6 @@
 #     """,
 #     unsafe_allow_html=True
 # )
-
 import os
 import openai
 import streamlit as st
