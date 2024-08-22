@@ -40,7 +40,7 @@ def translate_content(content, target_language):
         max_tokens=2048,  # Adjust as needed
         temperature=0.7
     )
-    translated_text = response['choices'][0]['message']['content'].strip()
+    translated_text = response.choices[0].message.content.strip()
     return translated_text
 
 # Function to download translated content in Markdown format
