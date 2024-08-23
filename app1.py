@@ -66,7 +66,7 @@ upload_col, lang_col = st.columns([3, 1])
 # Left column: File uploader and language selection
 with upload_col:
     st.subheader("Upload File")
-    uploaded_file = st.file_uploader("Choose a PDF or Text file", type=["pdf", "txt", "md"], label_visibility="collapsed")
+    uploaded_file = st.file_uploader("Choose a PDF or Text file", type=["pdf", "txt"], label_visibility="collapsed")
 
 with lang_col:
     # Language selection for translation
